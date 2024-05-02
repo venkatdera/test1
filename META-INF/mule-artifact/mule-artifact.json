@@ -1,0 +1,25 @@
+{
+  "configs": [
+    "awesome-car-company-api.xml"
+  ],
+  "secureProperties": [],
+  "redeploymentEnabled": true,
+  "name": "com.mycompany:awesome-car-company-api:1.0.0-SNAPSHOT",
+  "minMuleVersion": "4.5.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedPackages": [],
+      "exportedResources": [
+        "api/awesome-car-company-api.raml",
+        "awesome-car-company-api.xml",
+        "log4j2.xml"
+      ]
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}

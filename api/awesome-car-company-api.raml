@@ -1,0 +1,21 @@
+#%RAML 1.0
+title: awesome-car-company-api
+
+traits:
+  client-id-enforcement:
+    headers:
+      client_id:
+        required: true
+      client_secret:
+        required: true
+
+/carDetails:
+  is:
+    - client-id-enforcement
+  get:
+    description: Returns an organization entity.
+    responses:
+      201:
+        body:
+          application/json:
+      
